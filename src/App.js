@@ -23,7 +23,7 @@ export default function App() {
   return (
     <div className="font-body text-primary min-h-screen flex flex-col">
       <header className="h-mobile xl:h-desktop bg-pattern bg-cover bg-center">
-        <h1 className="text-center font-bold text-white lg:text-xl my-7 lg:my-8">
+        <h1 className="text-center font-bold text-white lg:text-3xl my-7">
           IP Address Tracker
         </h1>
         <Search setLoading={setLoading} setData={setData} />
