@@ -6,8 +6,8 @@ export default function Search({ setLoading, setData }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    if (query) {
+    if (query !== "") {
+      setLoading(true);
       fetch(
         `https://geo.ipify.org/api/v1?apiKey=${process.env.REACT_APP_IPIFY_API_KEY}&ipAddress=${query}`
       )

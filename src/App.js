@@ -30,7 +30,7 @@ export default function App() {
       </header>
       <main className="flex-1 flex justify-center">
         <Results loading={loading} data={data} />
-        <Map />
+        <Map data={data} />
       </main>
       <footer className="text-center">
         <Attribution />
